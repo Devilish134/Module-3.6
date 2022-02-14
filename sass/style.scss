@@ -1,0 +1,41 @@
+
+$header: 'Lato', sans-serif;
+$text: 'Playfair Display', serif;
+
+$color: #e1b12c;
+
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: $text;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/*navigation*/
+.navigation {
+    padding: 12px 0;
+    position: relative;
+    background-image: url("https://i.postimg.cc/pT6ScGkG/pexels-mikael-blomkvist-6476808.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash {
+    height: 100vh;
+
+}
+
+.navigation a {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Festive', cursive;
+    color: $color;
+}

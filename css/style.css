@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+/*navigation*/
+.navigation {
+  padding: 12px 0;
+  position: relative;
+  background-image: url("https://i.postimg.cc/P5fRhvNn/pexels-huseyn-kamaladdin-667838.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash {
+  height: 100vh;
+}
+
+.navigation a {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-family: "Festive", cursive;
+  color: #e1b12c;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPQTtFQUNJLFNBQUE7RUFDQSxlQUFBO0VBQ0Esc0NBUkc7QUNFUDs7QURTQTtFQUNJLGlCQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7QUNOSjs7QURTQSxhQUFBO0FBQ0E7RUFDSSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSwwRkFBQTtFQUNBLGtDQUFBO0VBQ0Esc0JBQUE7RUFDQSw0QkFBQTtBQ05KOztBRFNBO0VBQ0ksYUFBQTtBQ05KOztBRFVBO0VBQ0ksZUFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0VBQ0EsK0JBQUE7RUFDQSxjQW5DSTtBQzRCUiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
