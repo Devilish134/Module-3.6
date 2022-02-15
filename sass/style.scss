@@ -103,22 +103,19 @@ body {
 
 /*services*/
 
-.services {
-    margin-top: 24px;
-    padding: 34px;
-}
-
 .services-title {
     font-size: 32px;
     text-align: center;
     font-family: $header;
-    margin: 0;
+    margin: 48px auto;
+    margin-bottom: 72px;
+    padding: 25px;
     line-height: 0;
 }
 
 .services a {
     font-size: 24px;
-    float: center;
+    text-align: center;
     font-family: $text;
     opacity: 0.6;
 }
@@ -126,34 +123,35 @@ body {
 .box-wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    position: relative;
 }
 
 .box {
     flex: 1;
-    font-size: 42px;
     position: relative;
-    padding: 20px;
+    padding: 36px;
+    margin: 72px auto;
 }
 
 .box span {
     position: absolute;
-    top: 250%;
-    left: 1%;
-    color: $color;
+    left: 40%;
+    bottom: 80%;
 }
 
 .description {
     flex: 1;
     font-size: 18px;
-    margin: 12px 12px 18px 24px;
+    text-align: center;
+    margin: 12px 6px 18px 12px;
     line-height: 0.8;
-    color: rgba($color: #000000, $alpha: 0.4);
+    color: rgba($color: #000000, $alpha: 0.6);
     font-family: $text;
 }
 
 .description:first-of-type {
     font-size: 22px;
+    text-align: center;
     font-weight: bold;
     color: rgba($color: #000000, $alpha: 1.0);
     font-family: $header;
@@ -161,8 +159,11 @@ body {
 }
 
 .fas {
+    font-size: 42px;
+    text-align: center;
     margin: 5px auto;
     padding: 10px;
+    color: $color;
     border-width: 3px;
     border-style: solid;
     border-color: $color;
@@ -170,3 +171,5 @@ body {
     height: 50px;
     border-radius: 50%;
 }
+
+/*GALLERY*/
