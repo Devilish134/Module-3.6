@@ -28,7 +28,7 @@ body {
     height: 70vh;
 }
 
-.navigation a {
+a {
     text-decoration: none;    
 }
 
@@ -103,7 +103,7 @@ body {
 
 /*services*/
 
-.services-title {
+.title {
     font-size: 32px;
     text-align: center;
     font-family: $header;
@@ -113,7 +113,7 @@ body {
     line-height: 0;
 }
 
-.services a {
+.title a {
     font-size: 24px;
     text-align: center;
     font-family: $text;
@@ -173,3 +173,32 @@ body {
 }
 
 /*GALLERY*/
+
+.gallery {
+    background: lightgrey;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    position: relative;
+    max-width: 300px;
+    height: 450px;
+    margin: 18px;
+    margin-bottom: 32px;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
