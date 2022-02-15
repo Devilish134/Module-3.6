@@ -52,10 +52,13 @@ body {
 .navi a {
     font-size: 18px;
     font: $header;
-    color: white;   
+    color: white;  
 }
 
 /*splash*/
+.splash {
+    padding: 10px;
+}
 
 .splash-inner {
     position: absolute;
@@ -64,7 +67,8 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     color: white;
-}  
+} 
+
 .page-title {
     font-size: 32px;
     font-family: $text; 
@@ -100,19 +104,69 @@ body {
 /*services*/
 
 .services {
-    padding: 24px;
+    margin-top: 24px;
+    padding: 34px;
 }
 
-.services h2 {
-    font-size: 36px;
+.services-title {
+    font-size: 32px;
     text-align: center;
     font-family: $header;
     margin: 0;
-    line-height: 0.5;
+    line-height: 0;
 }
 
 .services a {
     font-size: 24px;
     float: center;
-    font-family: $text
+    font-family: $text;
+    opacity: 0.6;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.box {
+    flex: 1;
+    font-size: 42px;
+    position: relative;
+    padding: 20px;
+}
+
+.box span {
+    position: absolute;
+    top: 250%;
+    left: 1%;
+    color: $color;
+}
+
+.description {
+    flex: 1;
+    font-size: 18px;
+    margin: 12px 12px 18px 24px;
+    line-height: 0.8;
+    color: rgba($color: #000000, $alpha: 0.4);
+    font-family: $text;
+}
+
+.description:first-of-type {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba($color: #000000, $alpha: 1.0);
+    font-family: $header;
+    margin-top: 24px;
+}
+
+.fas {
+    margin: 5px auto;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
