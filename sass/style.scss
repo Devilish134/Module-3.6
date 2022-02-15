@@ -202,3 +202,46 @@ a {
     margin: 0 auto;
     margin-bottom: 12px;
 }
+
+/*footer*/
+
+.footer {
+    margin: 24px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+    display: inline;
+}
+
+.footer i {
+    flex: 1;
+    font-size: 17px;
+    margin: 0 5px;
+    height: 15px;
+    width: 15px;
+    padding: 15px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footer h4 {
+    flex: 1;
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.footer .row {
+    justify-content: left;
+    gap: 200px;
+}
+
+.footer a {
+    color: black;
+}
