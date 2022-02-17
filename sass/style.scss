@@ -32,8 +32,8 @@ a {
     text-decoration: none;    
 }
 
-.brand {
-    font-size: 36px;
+.navigation .brand {
+    font-size: 58px;
     margin: 0 24px 0 0;
     padding: 0;
     font-family: 'Festive', cursive;
@@ -41,23 +41,27 @@ a {
     text-align: left;
     font-weight: bold;
 }
-
-.brand-phone {
-    display: none;    
+.navigation .box-wrapper {
+    justify-content: space-between;    
 }
 
-.navi {
-    margin: 0 36px 0 0;
+.box-1 {
+    flex: 6;
+}
+
+.box-2 {
+    flex: 1;
+    text-align: right;
     margin-top: 16px;
     position: relative; 
-    display:  inline-block;
-    float: right;
+    display:  inline;
 }
 
-.navi a {
+.navigation a {
     font-size: 18px;
     font: $header;
-    color: white;  
+    color: white;
+    margin: 0 24px 0 0;
 }
 
 /*splash*/
@@ -84,6 +88,7 @@ a {
     font-size: 52px;
     font-family: $header;
     position: relative;
+    text-align: center;
 }
 
 .btn {
@@ -251,60 +256,77 @@ footer ul {
     color: black;
 }
 
-@media (max-width: 767px) {
+        @media (max-width: 767px) {
             
-    .navigation {
-        height: 90vh;
-    }
-    
-    .navi {
-        margin: 0 8px 0 0;
-        float: left;
-    }
-    
-    .navi a {
-        font-size: 12px;
-        line-height: 2;
-    }
+        .navigation {
+            height: 110vh;
+        }
+        
+        .navigation .box-wrapper {
+            flex-direction: column;
+        }
+        
+        .box-2 {
+            text-align: left;   
+        }
 
-    .brand {
-        font-size: 28px;
-        display: none;
+        .brand {
+            font-size: 58px;
+            float: left;
+            margin-right: 16px;
+        }
+        
+        .splash-inner {
+            margin-top: 48px    
+        }
+        
+        .splash-inner h2 {
+            font-size: 24px;
+        }
+        
+        .page-title {
+            font-size: 20px;
+        }
+        
+        .splash-inner a {
+            margin: 5px auto;
+        }
+        
+        .title span {
+            display: none;        
+        }
+        
+        
+        .title {
+            font-size: 24px;
+        }
+        
+        .title a {
+            font-size: 18px;    
+        }
+        
+        .footer .row {
+            gap: 50px;
+        }
+    }
+        
+        @media (min-width: 768px) and (max-width: 1024px) {
+        
+        .brand {
+            font-size: 48px;
+            margin: 0 16px 0 0;
+        }
+        
+        .navi {
+            margin: 0 24px 0 0;    
+        }
+        
+        .navi a {
+            font-size: 16px;
+        }
+        
+        .footer .row {
+            gap: 150px;
+        }
     }
     
-    .brand-phone {
-        display: block;
-        font-size: 28px;
-        margin-right: 68px;
-        padding: 0;
-        font-family: 'Festive', cursive;
-        color: $color;
-        text-align: left;
-        font-weight: bold;
-    }
-    
-    .splash-inner h2 {
-        font-size: 28px;
-    }
-    
-    .page-title {
-        font-size: 24px;
-    }
-    
-    .title span {
-        display: none;        
-    }
-    
-    
-    .title {
-        font-size: 24px;
-    }
-    
-    .title a {
-        font-size: 18px;    
-    }
-    
-    .footer .row {
-        gap: 50px;
-    }
-}
