@@ -29,7 +29,7 @@ body {
 }
 
 a {
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .navigation .brand {
@@ -42,24 +42,24 @@ a {
     font-weight: bold;
 }
 .navigation .box-wrapper {
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
-.box-1 {
+.box-primary {
     flex: 6;
 }
 
-.box-2 {
+.box-secondary {
     flex: 1;
     text-align: right;
     margin-top: 16px;
-    position: relative; 
+    position: relative;
     display:  inline;
 }
 
 .navigation a {
     font-size: 18px;
-    font: $header;
+    font-family: $header;
     color: white;
     margin: 0 24px 0 0;
 }
@@ -76,11 +76,11 @@ a {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     color: white;
-} 
+}
 
 .page-title {
     font-size: 32px;
-    font-family: $text; 
+    font-family: $text;
     text-align: center;
 }
 
@@ -94,16 +94,12 @@ a {
 .btn {
     display: inline-block;
     min-width: 16px;
-    margin: 24px auto;
     padding: 16px;
-    font-family: $header;
-    font-size: 18px;
     text-align: center;
     border-width: 8px;
     border-style: solid;
     border-color: $color;
     background-color: $color;
-    color: white;
     position: absolute;
     right: 26%;
     width: 40%;
@@ -256,77 +252,81 @@ footer ul {
     color: black;
 }
 
-        @media (max-width: 767px) {
-            
-        .navigation {
-            height: 110vh;
-        }
-        
-        .navigation .box-wrapper {
-            flex-direction: column;
-        }
-        
-        .box-2 {
-            text-align: left;   
-        }
+.footer ul a {
+    color: black;
+    font-size: 0;
+}
 
-        .brand {
-            font-size: 58px;
-            float: left;
-            margin-right: 16px;
-        }
-        
-        .splash-inner {
-            margin-top: 48px    
-        }
-        
-        .splash-inner h2 {
-            font-size: 24px;
-        }
-        
-        .page-title {
-            font-size: 20px;
-        }
-        
-        .splash-inner a {
-            margin: 5px auto;
-        }
-        
-        .title span {
-            display: none;        
-        }
-        
-        
-        .title {
-            font-size: 24px;
-        }
-        
-        .title a {
-            font-size: 18px;    
-        }
-        
-        .footer .row {
-            gap: 50px;
-        }
-    }
-        
-        @media (min-width: 768px) and (max-width: 1024px) {
-        
-        .brand {
-            font-size: 48px;
-            margin: 0 16px 0 0;
-        }
-        
-        .navi {
-            margin: 0 24px 0 0;    
-        }
-        
-        .navi a {
-            font-size: 16px;
-        }
-        
-        .footer .row {
-            gap: 150px;
-        }
-    }
-    
+@media (max-width: 767px) {
+
+.navigation {
+    height: 110vh;
+}
+
+.navigation .box-wrapper {
+    flex-direction: column;
+}
+
+.box-2 {
+    text-align: left;
+}
+
+.brand {
+    font-size: 58px;
+    float: left;
+    margin-right: 16px;
+}
+
+.splash-inner {
+    margin-top: 48px
+}
+
+.splash-inner h2 {
+    font-size: 24px;
+}
+
+.page-title {
+    font-size: 20px;
+}
+
+.splash-inner a {
+    margin: 5px auto;
+}
+
+.title span {
+    display: none;
+}
+
+
+.title {
+    font-size: 24px;
+}
+
+.title a {
+    font-size: 18px;
+}
+
+.footer .row {
+    gap: 0;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.brand {
+    font-size: 48px;
+    margin: 0 16px 0 0;
+}
+
+.navi {
+    margin: 0 24px 0 0;
+}
+
+.navi a {
+    font-size: 16px;
+}
+
+.footer .row {
+    gap: 150px;
+}
+}
